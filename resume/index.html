@@ -6,12 +6,78 @@
     <title>Resume | Yohan Kwon</title>
     <link rel="stylesheet" href="../style.css">
     <style>
+    /* Constrain and center the resume content */
     body {
-        text-align: center;
+        max-width: 50em;
+        margin: 0 auto;
+        padding: 0 1em;
     }
+
+    /* Name and contact header */
+    .resume-header {
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+
+    .resume-header h1 {
+        margin-bottom: 0.1em;
+    }
+
+    .resume-header p {
+        color: oklch(50% 0% 0);
+        margin: 0;
+    }
+
+    /* Section headings */
+    section {
+        margin-bottom: 1.5em;
+    }
+
+    section h2 {
+        font-size: 1em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-accent);
+        border-bottom: 1px solid oklch(80% 3% 200);
+        padding-bottom: 0.25em;
+        margin-bottom: 0.75em;
+    }
+
+    /* Individual entries */
+    article {
+        margin-bottom: 1em;
+    }
+
+    article h3 {
+        margin: 0 0 0.1em 0;
+        font-size: 1em;
+    }
+
+    article p {
+        margin: 0 0 0.25em 0;
+        color: oklch(50% 0% 0);
+        font-size: 0.9em;
+    }
+
+    /* Bullet lists */
     ul {
         list-style: none;
         padding: 0;
+        margin: 0.25em 0 0 0;
+    }
+
+    ul li {
+        padding-left: 1.2em;
+        position: relative;
+        margin-bottom: 0.2em;
+        font-size: 0.95em;
+    }
+
+    ul li::before {
+        content: "–";
+        position: absolute;
+        left: 0;
+        color: var(--color-accent);
     }
     </style>
 </head>
@@ -24,12 +90,14 @@
         <a href="https://github.com/yohannkkwon" target="_blank">GitHub</a>
     </nav>
 
-    <h1>Yohan Kwon</h1>
-    <p>
-        <a href="mailto:yohankwon9@gmail.com">yohankwon9@gmail.com</a> |
-        (619)-386-4055 |
-        <a href="https://www.linkedin.com/in/yohannkkwon" target="_blank">LinkedIn</a>
-    </p>
+    <div class="resume-header">
+        <h1>Yohan Kwon</h1>
+        <p>
+            <a href="mailto:yohankwon9@gmail.com">yohankwon9@gmail.com</a> |
+            (619)-386-4055 |
+            <a href="https://www.linkedin.com/in/yohannkkwon" target="_blank">LinkedIn</a>
+        </p>
+    </div>
 
     <section>
         <h2>Summary</h2>
