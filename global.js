@@ -35,7 +35,7 @@ for (let p of pages) {
 }
 
 // Dark mode switcher
-document.body.insertAdjacentHTML('afterbegin', `
+nav.insertAdjacentHTML('beforeend', `
   <label class="color-scheme">
     Theme:
     <select>

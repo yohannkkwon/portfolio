@@ -47,9 +47,7 @@ input, textarea, button, select {
 }
 
 .color-scheme {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+  margin-left: auto;
   font-size: 80%;
 }
 
