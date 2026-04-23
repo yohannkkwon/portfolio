@@ -20,17 +20,19 @@ body {
 
 nav {
   display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: stretch;
   margin-bottom: 1em;
   --border-color: oklch(50% 10% 200 / 40%);
   border-bottom: 1px solid var(--border-color);
 }
 
 nav a {
-  flex: 1;
   text-decoration: none;
   color: inherit;
   text-align: center;
-  padding: 0.5em;
+  padding: 0.5em 1em;
 }
 
 nav a.current {
@@ -50,7 +52,10 @@ input, textarea, button, select {
 }
 
 .color-scheme {
-  margin-left: auto;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   font-size: 80%;
 }
 
