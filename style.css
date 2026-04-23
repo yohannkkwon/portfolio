@@ -85,6 +85,12 @@ form button {
   margin: 0;
 }
 
+.projects article img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Step 4.4: Heading styles */
 h1 {
   font-size: 400%;

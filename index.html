@@ -8,18 +8,46 @@
     <script src="global.js" type="module"></script>
     <script src="index.js" type="module" defer></script>
     <style>
-        body {
+        .home-header {
             text-align: center;
         }
-        img {
+        .profile-photo {
             width: 600px;
+            max-width: 100%;
+        }
+        #profile-stats {
+            margin: 1em 0;
+        }
+        #profile-stats dl {
+            display: flex;
+            gap: 2em;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+        #profile-stats dt {
+            font-weight: bold;
+            font-size: 0.85em;
+            color: oklch(50% 0% 0);
+        }
+        #profile-stats dd {
+            font-size: 1.5em;
+            margin: 0;
+            color: var(--color-accent);
+        }
+        #profile-stats dl > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     </style>
 </head>
 <body>
-<h1>Yohan Kwon</h1>
-    <p>I am a third-year Data Science & Biochemistry student at UC San Diego, double majoring to bridge the gap between computational and life sciences. I conduct research at the Mertens Lab at the Sanford Consortium, where I analyze ALS datasets using bioinformatics tools. I'm on the pre-med track with a passion for neurodegenerative disease, community caregiving, and using data.</p>
-    <img src="images/IMG_2853.jpg" alt="Photo of Yohan Kwon">
+    <div class="home-header">
+        <h1>Yohan Kwon</h1>
+        <p>I am a third-year Data Science & Biochemistry student at UC San Diego, double majoring to bridge the gap between computational and life sciences. I conduct research at the Mertens Lab at the Sanford Consortium, where I analyze ALS datasets using bioinformatics tools. I'm on the pre-med track with a passion for neurodegenerative disease, community caregiving, and using data.</p>
+        <img src="images/IMG_2853.jpg" alt="Photo of Yohan Kwon" class="profile-photo">
+    </div>
 
     <div id="profile-stats"></div>
 
