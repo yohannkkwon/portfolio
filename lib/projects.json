@@ -1,0 +1,74 @@
+[
+  {
+    "title": "ALS Gene Expression Analysis (WGCNA)",
+    "year": "2025",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Analyzed ALS datasets from frontal cortex, motor cortex, and spinal cord using R, performing Weighted Gene Co-expression Network Analysis (WGCNA) and GO enrichment to identify 20+ disease-related gene modules."
+  },
+  {
+    "title": "Bioinformatics Pipeline for ALS Research",
+    "year": "2025",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Developed an integrated bioinformatics pipeline combining dry lab analysis with wet lab experiments including Maxiprep plasmid purification to advance regenerative medicine research at the Sanford Consortium."
+  },
+  {
+    "title": "Protein Structure Prediction with PyTorch",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Applied PyTorch deep learning models to predict molecular behaviors and improve protein structure analysis accuracy by 15% at the KAIST AI Chemistry Laboratory in Daejeon, South Korea."
+  },
+  {
+    "title": "Chemical Relationship Visualization Pipeline",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Developed data pipelines and visualizations for chemical relationship predictions, streamlining data collection and analysis through automation and script optimization at KAIST University."
+  },
+  {
+    "title": "Patient Care Data Management System",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Supported data-driven patient check-in and triage workflows at La Jolla Green Hospital Urgent Care, facilitating communication between departments and improving operational efficiency."
+  },
+  {
+    "title": "Cyclic Voltammetry Data Analysis",
+    "year": "2023",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Analyzed large datasets using Python and Excel to identify key electrochemical research trends, and developed standard operating procedures for electrochemical testing at Pukyong National University."
+  },
+  {
+    "title": "Electrochemical Properties Research",
+    "year": "2022",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Designed and conducted cyclic voltammetry experiments to assess electrochemical properties of novel materials, contributing to ongoing battery and energy storage research at Pukyong National University."
+  },
+  {
+    "title": "Electrochemistry Lab Automation",
+    "year": "2021",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Automated data collection workflows for electrochemical experiments, reducing manual processing time and improving reproducibility of experimental results in the Pukyong National University lab."
+  },
+  {
+    "title": "DSC 106 Lab 4: JavaScript II",
+    "year": "2026",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Built dynamic project rendering from a JSON data file, integrated GitHub API to display live profile stats, and implemented templating with async JavaScript fetch on a personal portfolio website."
+  },
+  {
+    "title": "DSC 106 Lab 3: JavaScript I",
+    "year": "2026",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Automated navigation menu generation, implemented dark mode switching with localStorage persistence, and built a better contact form using JS form interception and encodeURIComponent encoding."
+  },
+  {
+    "title": "DSC 106 Lab 2: Styling with CSS",
+    "year": "2026",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Styled a personal portfolio site using Flexbox navigation, CSS Grid for project layout, subgrid for content alignment, and CSS custom properties for accent colors and dark mode support."
+  },
+  {
+    "title": "DSC 106 Lab 1: Personal Portfolio",
+    "year": "2026",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Built a multi-page personal portfolio website from scratch using semantic HTML, including a home page, projects page, contact form, and resume page with structured sections for education and experience."
+  }
+]
