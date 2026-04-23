@@ -13,6 +13,9 @@ body {
 	 */
   font: 100%/1.5 system-ui;
   position: relative;
+  max-width: 80em;
+  margin-inline: auto;
+  padding: 0 1em;
 }
 
 nav {
