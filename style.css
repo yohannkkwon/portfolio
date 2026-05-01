@@ -108,3 +108,90 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   text-wrap: balance;
 }
+
+/* ── Lab 5: Project year display ─────────────────────────────────────────── */
+.project-year {
+  font-family: Baskerville, serif;
+  font-variant-numeric: oldstyle-nums;
+  color: oklch(50% 0% 0);
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.project-info p {
+  margin: 0 0 0.25em 0;
+}
+
+/* ── Lab 5: Search bar ───────────────────────────────────────────────────── */
+.searchBar {
+  width: 100%;
+  padding: 0.5em;
+  margin-block: 1em;
+  box-sizing: border-box;
+  border: 1px solid oklch(80% 3% 200);
+  border-radius: 0.4em;
+}
+
+/* ── Lab 5: Pie + legend side-by-side container ──────────────────────────── */
+.container {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin-block: 1em;
+}
+
+/* ── Lab 5: Pie chart SVG ────────────────────────────────────────────────── */
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+  overflow: visible;
+  flex-shrink: 0;
+}
+
+/* Fade non-hovered wedges when any wedge is hovered */
+#projects-pie-plot:has(path:hover) path:not(:hover) {
+  opacity: 0.5;
+}
+
+#projects-pie-plot path {
+  transition: 300ms;
+  cursor: pointer;
+}
+
+/* Selected wedge / legend item highlight */
+.selected {
+  --color: oklch(60% 45% 0) !important;
+}
+
+.selected:is(path) {
+  fill: var(--color);
+}
+
+/* ── Lab 5: Legend ───────────────────────────────────────────────────────── */
+.legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  list-style: none;
+  padding: 0.75em;
+  margin: 0;
+  border: 1px solid oklch(80% 3% 200);
+  border-radius: 0.5em;
+  flex: 1;
+  gap: 0.75em;
+  align-content: start;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.swatch {
+  display: inline-block;
+  width: 1em;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color);
+  border-radius: 0.2em;
+  flex-shrink: 0;
+}
