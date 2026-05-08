@@ -195,3 +195,120 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0.2em;
   flex-shrink: 0;
 }
+
+/* ── Lab 6: Meta page summary stats ─────────────────────────────────────── */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+  gap: 0.5em 1.5em;
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid oklch(80% 3% 200);
+  border-radius: 0.5em;
+}
+
+.stats > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.stats dt {
+  grid-row: 1;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: oklch(50% 0% 0);
+  letter-spacing: 0.04em;
+}
+
+.stats dd {
+  grid-row: 2;
+  margin: 0;
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+/* ── Lab 6: Scatterplot gridlines & axes ────────────────────────────────── */
+.gridlines line {
+  stroke: oklch(80% 3% 200);
+  stroke-opacity: 0.4;
+  shape-rendering: crispEdges;
+}
+
+.gridlines path {
+  display: none;
+}
+
+/* ── Lab 6: Dot interaction ─────────────────────────────────────────────── */
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+circle:hover {
+  transform: scale(1.5);
+}
+
+circle.selected {
+  fill: #ff6b6b;
+}
+
+/* ── Lab 6: Tooltip ─────────────────────────────────────────────────────── */
+dl.info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25em 1em;
+  margin: 0;
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+}
+
+dl.info dt {
+  color: oklch(50% 0% 0);
+  font-weight: normal;
+  font-size: 0.85em;
+}
+
+dl.info dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  padding: 0.75em 1em;
+  background-color: color-mix(in oklch, canvas 85%, transparent);
+  backdrop-filter: blur(6px);
+  border: 1px solid oklch(80% 3% 200 / 50%);
+  border-radius: 0.4em;
+  box-shadow: 0 4px 16px oklch(0% 0% 0 / 15%);
+  pointer-events: none;
+  z-index: 100;
+}
+
+/* ── Lab 6: Brush selection rectangle ───────────────────────────────────── */
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -8;
+  }
+}
+
+.selection {
+  fill-opacity: 0.1;
+  stroke: black;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
+}
+
+#selection-count {
+  margin: 1em 0 0.5em 0;
+  font-style: italic;
+}
