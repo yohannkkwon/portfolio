@@ -312,3 +312,123 @@ dl.info[hidden]:not(:hover, :focus-within) {
   margin: 1em 0 0.5em 0;
   font-style: italic;
 }
+
+/* ── Lab 8: Circle entry transition ─────────────────────────────────────── */
+circle {
+  transition: all 200ms, r calc(var(--r) * 30ms);
+  @starting-style {
+    r: 0;
+  }
+}
+
+/* ── Lab 8: Time filter slider ──────────────────────────────────────────── */
+#time-filter {
+  margin: 1em 0;
+}
+
+#time-filter label {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5em;
+}
+
+#time-filter input[type="range"] {
+  flex: 1;
+}
+
+#time-filter time {
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+  color: oklch(40% 0% 0);
+}
+
+/* ── Lab 8: Unit visualization for files ────────────────────────────────── */
+#files {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 0.5em 1em;
+  margin: 1em 0;
+}
+
+#files > div {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: subgrid;
+  border-bottom: 1px solid oklch(90% 1% 200);
+  padding: 0.4em 0;
+}
+
+#files dt {
+  grid-column: 1;
+  margin: 0;
+}
+
+#files dt code {
+  font-family: ui-monospace, monospace;
+  font-size: 0.9em;
+}
+
+#files dt small {
+  display: block;
+  font-size: 0.75em;
+  color: oklch(50% 0% 0);
+  opacity: 0.8;
+  margin-top: 0.15em;
+}
+
+#files dd {
+  grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  align-content: start;
+  gap: 0.15em;
+  padding-top: 0.6em;
+  margin-left: 0;
+}
+
+.loc {
+  display: flex;
+  width: 0.5em;
+  aspect-ratio: 1;
+  background: var(--color, steelblue);
+  border-radius: 50%;
+}
+
+/* ── Lab 8: Scrollytelling layout ───────────────────────────────────────── */
+#scrolly-1 {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+}
+
+#scrolly-1 > * {
+  flex: 1;
+}
+
+#scatter-story {
+  position: relative;
+}
+
+#scatter-plot {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  height: 50vh;
+  align-self: flex-start;
+}
+
+.step {
+  padding-bottom: 60vh;
+  line-height: 1.5;
+}
+
+.step:last-child {
+  padding-bottom: 0;
+}
+
+.step a {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
