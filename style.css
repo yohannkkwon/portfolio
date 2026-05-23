@@ -420,12 +420,16 @@ circle {
 }
 
 .step {
-  padding-bottom: 60vh;
+  padding-block: 1em 6em;
   line-height: 1.5;
 }
 
+.step:first-child {
+  padding-top: 0;
+}
+
 .step:last-child {
-  padding-bottom: 0;
+  padding-bottom: 2em;
 }
 
 .step a {
